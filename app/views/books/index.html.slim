@@ -1,0 +1,10 @@
+- @books.each do |book|
+
+ = link_to book_path(book.id) do
+  = attachment_image_tag book, :image
+  h4 投稿画像： 
+  . = image_tag('sample-author1.jpg', size: '200x200')
+  h4 タイトル： 
+  . = book.title
+  h4 内容： 
+  . = book.body

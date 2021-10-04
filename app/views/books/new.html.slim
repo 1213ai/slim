@@ -1,0 +1,9 @@
+h1 投稿フォーム
+= form_with model: @book, local:true do |f|
+  h4 画像
+  = f.attachment_field :image
+  h4 タイトル
+  = f.text_field :title
+  h4 内容
+  = f.text_area :body
+  = f.submit '投稿'
