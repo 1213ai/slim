@@ -68,3 +68,10 @@ gem 'html2slim'
 gem 'devise'
 
 gem 'slim_lint', require: false
+
+gem "refile", require: "refile/rails", github: 'manfe/refile'
+gem "refile-mini_magick"
+
+gem 'cocoon'
+
+gem "jquery-rails"

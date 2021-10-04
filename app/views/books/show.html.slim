@@ -1,0 +1,9 @@
+h4 投稿画像： 
+. = image_tag('sample-author1.jpg', size: '200x200')
+h4 
+. = @book.title
+h4 
+. = @book.body
+
+- if @book.user == current_user
+   = link_to "削除", book_path(@book.id), method: :delete
